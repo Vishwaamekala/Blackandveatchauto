@@ -25,6 +25,10 @@ public class Gig_WorkflowsOBJ {
 
     public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter']//button[text()='Save']");
     public static By gigContinuebtn = By.xpath("//div[@class='gigStepFooter']//button[text()='Continue']");
+    public static By manhours =By.xpath("//input[@name='manHourBudget0']");
+    public static By fragnettxt =By.xpath("//input[@name='fragnetStepDuration0']");
+    public static By greenvalidation =By.xpath("//div[@class='totalHrs colorGreen row']");
+    public static By redvalidation =By.xpath("//div[@class='totalHrs colorRed row']");
 
 
 

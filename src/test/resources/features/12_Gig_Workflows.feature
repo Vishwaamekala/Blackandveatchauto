@@ -14,9 +14,13 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
 #      | Activity             |
 #      | Activity Information |
 
-    And user select Customize Fragnet and fill the details
-      | Activity          |
-      | Customize Fragnet |
+#    And user select Customize Fragnet and fill the details
+#      | Activity          |
+#      | Customize Fragnet |
+
+    And user select FragnetStep Information and fill the details
+      | Activity                |
+      | FragnetStep Information |
 
 
 

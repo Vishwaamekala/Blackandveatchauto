@@ -7,11 +7,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import sun.jvm.hotspot.debugger.ThreadAccess;
+
 
 import java.util.List;
 
@@ -112,10 +114,43 @@ public class GigaWorkflowStep extends TestBase {
         step2activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",customizeFragnet.get(1).get(0)).replaceAll("By.xpath:","");
         TestUtilDemo.clickElement(By.xpath(step2activity),"select first activity");
         Thread.sleep(3000);
+//        String totalbudget =  TestUtilDemo.getTex(By.xpath("//div[@class='totalBudgetLabel']"));
+//        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget)-2)+"");
+//        Thread.sleep(2000);
+//        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.redvalidation,"exists"));
+//        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget))+"");
+//        Thread.sleep(1000);
+//        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.greenvalidation,"exists"));
+
 
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
         Thread.sleep(3000);
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
+
+    }
+
+    @And("user select FragnetStep Information and fill the details")
+    public void userSelectFragnetStepInformationAndFillTheDetails(DataTable  custfragnet) throws InterruptedException {
+
+        List<List<String>>  cFragnet  = custfragnet.asLists();
+        String step3activity ;
+        step3activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",cFragnet.get(1).get(0)).replaceAll("By.xpath:","");
+        TestUtilDemo.clickElement(By.xpath(step3activity),"select first activity");
+        Thread.sleep(3000);
+       TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.fragnettxt);
+        String totalbudget =  TestUtilDemo.getTex(By.xpath("//div[@class='totalBudgetLabel']"));
+        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget.replaceAll("[^0-9]", ""))-2)+"");
+        Thread.sleep(2000);
+        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.redvalidation,"exists"));
+        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget.replaceAll("[^0-9]",""))+""));
+        Thread.sleep(1000);
+        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.greenvalidation,"exists"));
+
+
+        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
+        Thread.sleep(3000);
+        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
+
 
     }
 }
