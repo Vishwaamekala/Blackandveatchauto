@@ -12,7 +12,7 @@
     Examples:
 
   Scenario Outline: Click on the Electrical header and complete all the subsections as PLI user
-  Given: When user clicks on Electrical Header area
+    Given: When user clicks on Electrical Header area
     Then It should display default to Electrical subsection
     Then User enters all the numeric values for all the text fields below Electrical header below fields
     Then Validate user click on the save button

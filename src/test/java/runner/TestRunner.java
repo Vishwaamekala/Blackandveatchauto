@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		strict = true,
-        features = {"src/test/resources/features"},
+        features = {"./src/test/resources/features"},
         glue = {"com/wipro/qa/stepDefinitions"},
 		tags = {"@TestCase44745"},
 		//tags = {"@assigndisciplines"},
@@ -16,7 +16,7 @@ import io.cucumber.junit.CucumberOptions;
       // plugin = {"com.cucumber.listener.ExtentCucumberFormatter"})
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
-	/*
+	/*  E:\Pra105791\AutomationSelenium\Blackandveatchauto\src\test\resources\features
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		// features = {"src/test/resources/features/06_AssignDisciplineTeamDPS.feature"},

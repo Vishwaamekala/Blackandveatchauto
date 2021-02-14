@@ -31,6 +31,7 @@ public class ProjectInformationStepDemo extends TestBase {
 
 		}
 	}
+
 	
 	@Then("^validate ProjectInformation Headeris Display$")
 	public void validate_project_information_headeris_display() throws Throwable {
@@ -780,7 +781,7 @@ public class ProjectInformationStepDemo extends TestBase {
 	public void validate_user_select_and_check_all_mendetory_field_in_technical_requirement(String PerformanceResponsibility,String stateRegCode) throws Throwable {
 
 		TestUtilDemo.clickElement(ProjectInfoOBJ.unitSystemDropDown, " click on the unitSystemDropDown value");
-		TestUtilDemo.clickElement(ProjectInfoOBJ.unitSystemDropDownValue, " click on the unitSystemDropDownValue");
+//		TestUtilDemo.clickElement(ProjectInfoOBJ.unitSystemDropDownValue, " click on the unitSystemDropDownValue");
 		
 		//String clientName =  driver.findElement(ProjectInfoOBJ.PerformanceResponsibility).getAttribute("value");
 		if((driver.findElement(ProjectInfoOBJ.authorityHaving).getAttribute("value")).equals("Automation Testing")) {

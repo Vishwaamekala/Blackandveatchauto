@@ -156,7 +156,7 @@ public class TestUtilDemo extends TestBase {
 	 * Method of dropDownSelect
 	 * 
 	 * @param locator         : String : Locator type (id, name, class, xpath, css)
-	 * @param stepDiscription : String : Locator value
+//	 * @param stepDiscription : String : Locator value
 	 */
 	public static void dropDownSelect(By locator, String val, String elementName) throws RuntimeException {
 		WebElement element = driver.findElement(locator);
@@ -171,7 +171,7 @@ public class TestUtilDemo extends TestBase {
 	 * Method of dropDownSelect byIndex
 	 * 
 	 * @param locator         : String : Locator type (id, name, class, xpath, css)
-	 * @param stepDiscription : String : Locator value
+//	 * @param stepDiscription : String : Locator value
 	 */
 	public static void dropDownSelectByIndex(By locator, int val, String elementName) throws RuntimeException {
 		WebElement element = driver.findElement(locator);
@@ -186,7 +186,7 @@ public class TestUtilDemo extends TestBase {
 	 * Method of dropDownSelect byValue
 	 * 
 	 * @param locator         : String : Locator type (id, name, class, xpath, css)
-	 * @param stepDiscription : String : Locator value
+//	 * @param stepDiscription : String : Locator value
 	 */
 	public static void dropDownSelectByValue(By locator, String val, String elementName) throws RuntimeException {
 		WebElement element = driver.findElement(locator);
@@ -254,8 +254,9 @@ public class TestUtilDemo extends TestBase {
 
 		WebElement element = driver.findElement(locator);
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-	    jse.executeScript("arguments[0].scrollIntoView()", element);
-	}
+		jse.executeScript("arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');", element);
+		jse.executeScript("arguments[0].scrollIntoView()", element);
+		}
 	public static void scrolltoponly() throws RuntimeException {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
