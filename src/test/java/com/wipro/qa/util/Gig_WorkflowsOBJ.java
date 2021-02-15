@@ -23,13 +23,17 @@ public class Gig_WorkflowsOBJ {
     public static By controlRoomNuorNamdrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Control Room Number/Name']/parent::div//div[1]");
 
 
-    public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter']//button[text()='Save']");
+    public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Save']");
     public static By gigContinuebtn = By.xpath("//div[@class='gigStepFooter']//button[text()='Continue']");
     public static By manhours =By.xpath("//input[@name='manHourBudget0']");
     public static By fragnettxt =By.xpath("//input[@name='fragnetStepDuration0']");
     public static By greenvalidation =By.xpath("//div[@class='totalHrs colorGreen row']");
     public static By redvalidation =By.xpath("//div[@class='totalHrs colorRed row']");
+    public static By step4completedrnd =By.xpath("//span[text()='Mark as Completed']");
 
+
+    public static By equipmentdatasheetlist =By.xpath("//ul[@class='list-group']//li//p[text()='textToReplace']/parent::div/span");
+    public static By worktype=By.xpath("//p[text()='Work Type']/parent::div/div");
 
 
     }

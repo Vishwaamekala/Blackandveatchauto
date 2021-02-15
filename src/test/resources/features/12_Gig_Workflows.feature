@@ -18,11 +18,25 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
 #      | Activity          |
 #      | Customize Fragnet |
 
-    And user select FragnetStep Information and fill the details
-      | Activity                |
-      | FragnetStep Information |
+#    And user select FragnetStep Information and fill the details
+#      | Activity                |
+#      | FragnetStep Information |
 
+#    And user select Customize Gignet and fill the details
+#      | Activity         |
+#      | Customize Gignet |
 
+    And user select Gig Information and fill the details
+      | Activity                                       |
+      | Gig Information                                |
+      | Review Process Datasheets                      |
+      | Prepare Draft Mechanical Datasheets            |
+      | Check Draft Mechanical Datasheets              |
+      | Setup IHR session for Mechanical Datasheets    |
+      | Conduct IHR for Mechanical Datasheets          |
+      | Resolve IHR comments for Mechanical Datasheets |
+      | PE stamp Datasheets                            |
+      | Issue of PE stamped Datasheets                 |
 
 
 

@@ -3,6 +3,7 @@ package com.wipro.qa.stepDefinitions;
 import com.wipro.qa.base.TestBase;
 import com.wipro.qa.util.*;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -114,14 +115,6 @@ public class GigaWorkflowStep extends TestBase {
         step2activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",customizeFragnet.get(1).get(0)).replaceAll("By.xpath:","");
         TestUtilDemo.clickElement(By.xpath(step2activity),"select first activity");
         Thread.sleep(3000);
-//        String totalbudget =  TestUtilDemo.getTex(By.xpath("//div[@class='totalBudgetLabel']"));
-//        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget)-2)+"");
-//        Thread.sleep(2000);
-//        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.redvalidation,"exists"));
-//        TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget))+"");
-//        Thread.sleep(1000);
-//        Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.greenvalidation,"exists"));
-
 
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
         Thread.sleep(3000);
@@ -137,7 +130,7 @@ public class GigaWorkflowStep extends TestBase {
         step3activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",cFragnet.get(1).get(0)).replaceAll("By.xpath:","");
         TestUtilDemo.clickElement(By.xpath(step3activity),"select first activity");
         Thread.sleep(3000);
-       TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.fragnettxt);
+        TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.fragnettxt);
         String totalbudget =  TestUtilDemo.getTex(By.xpath("//div[@class='totalBudgetLabel']"));
         TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours , (Integer.parseInt(totalbudget.replaceAll("[^0-9]", ""))-2)+"");
         Thread.sleep(2000);
@@ -146,11 +139,87 @@ public class GigaWorkflowStep extends TestBase {
         Thread.sleep(1000);
         Assert.assertTrue(TestUtilDemo.isElementPresent(Gig_WorkflowsOBJ.greenvalidation,"exists"));
 
-
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
         Thread.sleep(3000);
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
 
 
     }
+    @And("user select Customize Gignet and fill the details")
+    public void userSelectCustomizeGignetAndFillTheDetails(DataTable  custgig) throws InterruptedException {
+
+        List<List<String>>  gigcustomize  = custgig.asLists();
+        String step4activity ;
+        step4activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",gigcustomize.get(1).get(0)).replaceAll("By.xpath:","");
+        TestUtilDemo.clickElement(By.xpath(step4activity),"select first activity");
+        Thread.sleep(3000);
+        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
+        Thread.sleep(2000);
+
+        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.step4completedrnd,"select first activity");
+        Thread.sleep(3000);
+        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
+
+
+
+    }
+
+
+    @And("user select Gig Information and fill the details")
+    public void userSelectGigInformationAndFillTheDetails(DataTable  gig) throws InterruptedException {
+
+            List<List<String>>  giginfo  = gig.asLists();
+            String step5activity ;
+            step5activity= Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace",giginfo.get(1).get(0)).replaceAll("By.xpath:","");
+            TestUtilDemo.clickElement(By.xpath(step5activity),"select first activity");
+
+            Thread.sleep(3000);
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.step4completedrnd,"select first activity");
+            Thread.sleep(3000);
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
+
+//        Review Process Datasheets
+//        Prepare Draft Mechanical Datasheets
+//        Check Draft Mechanical Datasheets
+
+        for (int row=2;row<=giginfo.size();row++) {
+
+            Actions act = new Actions(driver);
+            if (row<5) {
+                String ReviewProcessDatasheets;
+                ReviewProcessDatasheets = Gig_WorkflowsOBJ.equipmentdatasheetlist.toString().replace("textToReplace", giginfo.get(row).get(0)).replaceAll("By.xpath:", "");
+                TestUtilDemo.clickElement(By.xpath(ReviewProcessDatasheets), "select first activity");
+                act.sendKeys(Keys.ARROW_DOWN).build().perform();
+                Thread.sleep(3000);
+            }else{
+                String ReviewProcessDatasheets;
+                ReviewProcessDatasheets = Gig_WorkflowsOBJ.equipmentdatasheetlist.toString().replace("textToReplace", giginfo.get(row).get(0).concat(" ")).replaceAll("By.xpath:", "").concat(" ");
+                TestUtilDemo.clickElement(By.xpath(ReviewProcessDatasheets), "select first activity");
+                act.sendKeys(Keys.ARROW_DOWN).build().perform();
+                Thread.sleep(3000);
+            }
+
+            TestUtilDemo.clickElement(By.xpath("//p[text()='Fill In Activity Information']"),"test");
+            act.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN,Keys.ARROW_DOWN).build().perform();
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(Gig_WorkflowsOBJ.worktype));
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.worktype,"select worktype");
+            act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
+            Thread.sleep(300);
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn,"select first activity");
+            Thread.sleep(2000);
+            TestUtilDemo.scrollUpTop();
+
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.step4completedrnd,"select first activity");
+            Thread.sleep(2000);
+        }
+
+        Thread.sleep(2000);
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
+
+
+
+    }
+
+
+
 }
