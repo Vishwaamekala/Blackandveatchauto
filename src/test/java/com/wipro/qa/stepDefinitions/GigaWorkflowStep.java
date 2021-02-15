@@ -182,10 +182,10 @@ public class GigaWorkflowStep extends TestBase {
 //        Prepare Draft Mechanical Datasheets
 //        Check Draft Mechanical Datasheets
 
-        for (int row=2;row<=giginfo.size();row++) {
+        for (int row=2;row<giginfo.size();row++) {
 
             Actions act = new Actions(driver);
-            if (row<5) {
+            if (row<5 || row ==8) {
                 String ReviewProcessDatasheets;
                 ReviewProcessDatasheets = Gig_WorkflowsOBJ.equipmentdatasheetlist.toString().replace("textToReplace", giginfo.get(row).get(0)).replaceAll("By.xpath:", "");
                 TestUtilDemo.clickElement(By.xpath(ReviewProcessDatasheets), "select first activity");
@@ -214,7 +214,7 @@ public class GigaWorkflowStep extends TestBase {
         }
 
         Thread.sleep(2000);
-            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinuebtn, "continue button");
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigFinishbtn, "continue button");
 
 
 

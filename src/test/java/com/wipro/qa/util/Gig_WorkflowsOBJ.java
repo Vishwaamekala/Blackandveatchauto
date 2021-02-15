@@ -34,6 +34,7 @@ public class Gig_WorkflowsOBJ {
 
     public static By equipmentdatasheetlist =By.xpath("//ul[@class='list-group']//li//p[text()='textToReplace']/parent::div/span");
     public static By worktype=By.xpath("//p[text()='Work Type']/parent::div/div");
+    public static By gigFinishbtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Finish Gig Workflow']");
 
 
     }
