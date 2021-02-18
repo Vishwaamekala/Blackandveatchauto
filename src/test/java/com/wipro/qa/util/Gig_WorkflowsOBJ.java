@@ -6,7 +6,9 @@ public class Gig_WorkflowsOBJ {
 
     public static By gigHeader = By.xpath("//div[text()='Gig Workflows']");
     public static By gigworkFlowHeader = By.xpath("//span[@class='gigHeaderLabel']");
-    public static By dropdownSelectoption = By.xpath("//div[@class='selectOption']/span[text()='Piping Line Schedule']");
+    public static By dropdownSelectoption = By.xpath("//div[@class='gigworkflow-select']/parent::div//div[@class='activitySelect__indicators css-1wy0on6']");
+    public static By gigworkflowdropdown = By.xpath("//div[text()='textToReplace']");
+    public static By optionselect = By.xpath("//div[@tabindex='-1']/div[@class='selectOption']/span[text()='textToReplace']");
 
     //Dos activity
     public static By activityDropdownbox = By.xpath("//span[text()='Mechanical Data Sheets']//parent::div");
