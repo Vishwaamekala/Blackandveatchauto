@@ -26,7 +26,9 @@ public class Gig_WorkflowsOBJ {
 
 
     public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Save']");
-    public static By gigContinuebtn = By.xpath("//div[@class='gigStepFooter']//button[text()='Continue']");
+    public static By gigContinuebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Continue']");
+    public static By gigContinueenabledbtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[@class='completeButtonActiveGig']");
+
     public static By manhours =By.xpath("//input[@name='manHourBudget0']");
     public static By fragnettxt =By.xpath("//input[@name='fragnetStepDuration0']");
     public static By greenvalidation =By.xpath("//div[@class='totalHrs colorGreen row']");
@@ -37,6 +39,9 @@ public class Gig_WorkflowsOBJ {
     public static By equipmentdatasheetlist =By.xpath("//ul[@class='list-group']//li//p[text()='textToReplace']/parent::div/span");
     public static By worktype=By.xpath("//p[text()='Work Type']/parent::div/div");
     public static By gigFinishbtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Finish Gig Workflow']");
+    public static By PreferredPerformerLocation = By.xpath("//p[text()='Preferred Performer Location']/parent::div/div");
+    public static By btncomplete= By.xpath("//button[text()='Complete']");
 
+    public static By txtgiginsturctionR= By.xpath("//textarea[@name='general.gigInstructions']");
 
     }
