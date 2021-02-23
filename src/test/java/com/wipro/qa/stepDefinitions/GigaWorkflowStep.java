@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -124,7 +125,8 @@ public class GigaWorkflowStep extends TestBase {
         step3activity = Gig_WorkflowsOBJ.allSteos.toString().replace("textToReplace", cFragnet.get(1).get(0)).replaceAll("By.xpath:", "");
         TestUtilDemo.clickElement(By.xpath(step3activity), "select first activity");
         Thread.sleep(3000);
-        TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.fragnettxt);
+        //TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.fragnettxt);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.fragnettxt));
         String totalbudget = TestUtilDemo.getTex(By.xpath("//div[@class='totalBudgetLabel']"));
         TestUtilDemo.clearAnddoSendKeys(Gig_WorkflowsOBJ.manhours, (Integer.parseInt(totalbudget.replaceAll("[^0-9]", "")) - 2) + "");
         Thread.sleep(2000);
@@ -384,42 +386,46 @@ public class GigaWorkflowStep extends TestBase {
         TestUtilDemo.clickElement(By.xpath(step1activity), "select first activity");
         Thread.sleep(3000);
         Actions act = new Actions(driver);
-        act.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN).build().perform();
+//        act.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN).build().perform();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.subtypedrpdnR));
         webDriverWait.until(ExpectedConditions.elementToBeClickable(Gig_WorkflowsOBJ.subtypedrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.subtypedrpdnR, "subtype selected");
-
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
         boolean founds = false;
 
-        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR, "Instrument Purchase Specification Number selected");
-        TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR);
-        act.sendKeys(Keys.ARROW_UP, Keys.ARROW_UP).build().perform();
-        act.sendKeys(Keys.ARROW_UP, Keys.ARROW_UP).build().perform();
+//        TestUtilDemo.clickElement(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR, "Instrument Purchase Specification Number selected");
+//        TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR);
+//        act.sendKeys(Keys.ARROW_UP, Keys.ARROW_UP).build().perform();
+//        act.sendKeys(Keys.ARROW_UP, Keys.ARROW_UP).build().perform();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR, "Instrument Purchase Specification Number selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
         Thread.sleep(3000);
 
-
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.instPurchaseSpecNudrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.equipmenttagorNamedrpdnR, "Equipment Tag/Name selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
         Thread.sleep(300);
 
-        TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.equipmentCategorydrpdnR);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.equipmentCategorydrpdnR));
+        //TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.equipmentCategorydrpdnR);
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.equipmentCategorydrpdnR, "Equipment Category selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
 
 
         Thread.sleep(300);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.electricalEquiNuorNadrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.electricalEquiNuorNadrpdnR, "Electrical Equipment Number/Name selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
 
-
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.powerhouseTagNadrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.powerhouseTagNadrpdnR, "Powerhouse Tag/Name selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
 
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.controlRoomNuorNamdrpdnR));
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.controlRoomNuorNamdrpdnR, "Control Room Number/Name selected");
         act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
-////div[@class='alert alert-success']
+
         TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "Save button");
         Thread.sleep(6000);
         webDriverWait.until(ExpectedConditions.elementToBeClickable(Gig_WorkflowsOBJ.gigContinueenabledbtn));
@@ -456,25 +462,34 @@ public class GigaWorkflowStep extends TestBase {
 
             //TestUtilDemo.clickElement(By.xpath("//p[text()='Fill In Activity Information']"), "test");
             act.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN,Keys.ARROW_DOWN).build().perform();
-            webDriverWait.until(ExpectedConditions.elementToBeClickable(Gig_WorkflowsOBJ.worktype));
-            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.worktype, "select worktype");
+            if(driver.findElements(Gig_WorkflowsOBJ.worktype).size()>0) {
+                Thread.sleep(3000);
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})" ,driver.findElement(Gig_WorkflowsOBJ.worktype));
+                webDriverWait.until(ExpectedConditions.elementToBeClickable(Gig_WorkflowsOBJ.worktype));
+                TestUtilDemo.clickElement(Gig_WorkflowsOBJ.worktype, "select worktype");
+                act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
+                Thread.sleep(3000);
+            }
+            if(driver.findElements(Gig_WorkflowsOBJ.txtgiginsturctionR).size()>0) {
+                TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.txtgiginsturctionR);
+                TestUtilDemo.doSendKeys(Gig_WorkflowsOBJ.txtgiginsturctionR, "Gig flow autmation");
+            }
             act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
             Thread.sleep(3000);
-            TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.txtgiginsturctionR);
-            TestUtilDemo.doSendKeys(Gig_WorkflowsOBJ.txtgiginsturctionR, "Gig flow autmation");
-
-            act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
-            Thread.sleep(3000);
-            TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.PreferredPerformerLocation);
-            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.PreferredPerformerLocation, "select preferred");
+            if(driver.findElements(Gig_WorkflowsOBJ.PreferredPerformerLocation).size()>0) {
+                TestUtilDemo.scrollUpToElementPresent(Gig_WorkflowsOBJ.PreferredPerformerLocation);
+                TestUtilDemo.clickElement(Gig_WorkflowsOBJ.PreferredPerformerLocation, "select preferred");
+            }
             act.sendKeys(Keys.ARROW_DOWN, Keys.ENTER).build().perform();
             Thread.sleep(4000);
             TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigSavebtn, "select first activity");
             Thread.sleep(2000);
             TestUtilDemo.scrollUpTop();
             Thread.sleep(2000);
-            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.step4completedrnd, "select first activity");
+            //TestUtilDemo.clickElement(Gig_WorkflowsOBJ.step4completedrnd, "select first activity");
+            TestUtilDemo.clickElement(Gig_WorkflowsOBJ.gigContinueenabledbtn, "Finish Gig flow button clicked");
             Thread.sleep(2000);
+
         }
     }
 }

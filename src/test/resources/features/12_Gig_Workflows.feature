@@ -4,7 +4,7 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
   Scenario:Completed all the the five steps on Gig Worflow Landing page
     Given  user login with gig workflow permission
       | assinguser       | assignpassword | projectID |
-      | equipment@bv.com | test           | AMR32     |
+      | equipment@bv.com | test           | AMR34     |
 
     And user select  giga workflow from top menu
     And user select the option gig workflow  dropdown
@@ -44,7 +44,7 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
   Scenario Outline:Completed all the the five steps on Gig Worflow for  PIPing displaine
     Given  user login with gig workflow permission
       | assinguser    | assig6npassword | projectID |
-      | piping@bv.com | test            | AMR35     |
+      | piping@bv.com | test            | AMR38     |
 
     And user select  giga workflow from top menu
     And user select the option gig workflow  dropdown "<gigworkflow>"
@@ -82,7 +82,7 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
   Scenario Outline:Completed all the the five steps on Gig Worflow for Process displaine
     Given  user login with gig workflow permission
       | assinguser     | assig6npassword | projectID |
-      | process@bv.com | test            | AMR37     |
+      | process@bv.com | test            | AMR43     |
 
     And user select  giga workflow from top menu
     And user select the option gig workflow  dropdown "<gigworkflow>"
@@ -114,4 +114,4 @@ Feature: Click on Gig Workflows header navigated to Gig Workflow Landing page
     Examples:
       | gigworkflow   |
       | Line Schedule |
-#      | Equipment List |
+      | Equipment List |
