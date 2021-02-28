@@ -4,17 +4,20 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		strict = true,
-        features = {"./src/test/resources/features"},
-        glue = {"com/wipro/qa/stepDefinitions"},
+        features = {"./src/test/resources/features/"},
+        glue = {"com/wipro/qa/stepDefinitions/"},
 		tags = {"@TestCase44745"},
 		//tags = {"@assigndisciplines"},
     //    plugin = {"json:target/cucumber.json"})
       // plugin = {"com.cucumber.listener.ExtentCucumberFormatter"})
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/c3ucumber-report.json"},
+		monochrome = true,
+		//strict = true,
+		dryRun = false
+		)
 
 	/*  E:\Pra105791\AutomationSelenium\Blackandveatchauto\src\test\resources\features
 @RunWith(Cucumber.class)

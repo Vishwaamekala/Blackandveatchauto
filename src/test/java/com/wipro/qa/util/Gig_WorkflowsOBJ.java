@@ -23,7 +23,7 @@ public class Gig_WorkflowsOBJ {
     public static By electricalEquiNuorNadrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Electrical Equipment Number/Name']/parent::div//div[1]");
     public static By powerhouseTagNadrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Powerhouse Tag/Name']/parent::div//div[1]");
     public static By controlRoomNuorNamdrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Control Room Number/Name']/parent::div//div[1]");
-
+    public static By checkUncheckprocess = By.xpath("//div[text()='textToReplace']/parent::div/div[@class='checkbox_wrapper']/label");
 
     public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Save']");
     public static By gigContinuebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Continue']");
