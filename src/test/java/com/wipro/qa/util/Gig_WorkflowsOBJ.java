@@ -8,7 +8,7 @@ public class Gig_WorkflowsOBJ {
     public static By gigworkFlowHeader = By.xpath("//span[@class='gigHeaderLabel']");
     public static By dropdownSelectoption = By.xpath("//div[@class='gigworkflow-select']/parent::div//div[@class='activitySelect__indicators css-1wy0on6']");
     public static By gigworkflowdropdown = By.xpath("//div[text()='textToReplace']");
-    public static By optionselect = By.xpath("//div[@tabindex='-1']/div[@class='selectOption']/span[text()='textToReplace']");
+    public static By optionselect = By.xpath("//div[@class ='activitySelect__menu css-26l3qy-menu']//span[text()='textToReplace']");
 
     //Dos activity
     public static By activityDropdownbox = By.xpath("//span[text()='Mechanical Data Sheets']//parent::div");
@@ -17,12 +17,14 @@ public class Gig_WorkflowsOBJ {
     public static By step1ActivityInformation = By.xpath("//div[text()='Activity Information']");
     public static By subtypedrpdnR = By.xpath("//p[text()='Subtype']/parent::div//div");
     //public static By purchaseSpecNuorNametxt = By.xpath("");
-    public static By instPurchaseSpecNudrpdnR = By.xpath("//p[text()='Instrument Purchase Specification Number']/parent::div//div[1]");
+    public static By instPurchaseSpecNudrpdnR = By.xpath("//p[text()='Instrument Purchase Specification Number']/parent::div/..//p[text()='Instrument Purchase Specification Number']/parent::div/div[1]");
     public static By equipmenttagorNamedrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Equipment Tag/Name']/parent::div/div[1]");
     public static By equipmentCategorydrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Equipment Category']/parent::div/div[1]");
     public static By electricalEquiNuorNadrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Electrical Equipment Number/Name']/parent::div//div[1]");
     public static By powerhouseTagNadrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Powerhouse Tag/Name']/parent::div//div[1]");
     public static By controlRoomNuorNamdrpdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Control Room Number/Name']/parent::div//div[1]");
+    public static By foundatiotagnamepdnR = By.xpath("//p[text()='Discipline/Subject Specific']/parent::div/..//p[text()='Foundation Tag/Name']/parent::div//div[1]");
+
     public static By checkUncheckprocess = By.xpath("//div[text()='textToReplace']/parent::div/div[@class='checkbox_wrapper']/label");
 
     public static By gigSavebtn = By.xpath("//div[@class='gigStepFooter' or @class='gigButtonContainer']//button[text()='Save']");
