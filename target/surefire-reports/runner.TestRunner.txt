@@ -1,0 +1,756 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 3.746 sec <<< FAILURE!
+validaate electrical discipline(Create and validate project super and non super users)  Time elapsed: 0.336 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "As user login with super permission "electrical@bv.com", "test"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("As user login with super permission {string}, {string}")
+public void as_user_login_with_super_permission(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Then("Select newly created project card {string}")
+public void select_newly_created_project_card(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Click on WBS Option")
+public void click_on_WBS_Option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("validate electrical displain options on left menu {string}")
+public void validate_electrical_displain_options_on_left_menu(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user fill the the details for Electrical Equipment List")
+public void user_fill_the_the_details_for_Electrical_Equipment_List(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user fill the the details for Powerhouse List")
+public void user_fill_the_the_details_for_Powerhouse_List(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user fill the the details for Electrical systems name")
+public void user_fill_the_the_details_for_Electrical_systems_name(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow Landing page(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.019 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown")
+public void user_select_the_option_gig_workflow_dropdown() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details")
+public void user_select_activity_information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for  Piping discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.007 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details")
+public void user_select_activity_information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for  Piping discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.011 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details")
+public void user_select_activity_information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Process discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.009 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details")
+public void user_select_activity_information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Process discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.008 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details")
+public void user_select_activity_information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Electrical discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.007 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details for Process")
+public void user_select_activity_information_and_fill_the_details_for_Process(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Electrical discipline(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.01 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details for Process")
+public void user_select_activity_information_and_fill_the_details_for_Process(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for IandC displaine(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.01 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details for Process")
+public void user_select_activity_information_and_fill_the_details_for_Process(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("uncheck all FragnetStep Information nonreview steps and select first  nonreview step")
+public void uncheck_all_FragnetStep_Information_nonreview_steps_and_select_first_nonreview_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string} IandC")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive_IandC(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Structural displaine(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.009 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details for Structural")
+public void user_select_activity_information_and_fill_the_details_for_Structural(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("uncheck all FragnetStep Information nonreview steps and select first  nonreview step")
+public void uncheck_all_FragnetStep_Information_nonreview_steps_and_select_first_nonreview_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Completed all the the five steps on Gig Worflow for Structural displaine(Click on Gig Workflows header navigated to Gig Workflow Landing page)  Time elapsed: 0.006 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user login with gig workflow permission" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user login with gig workflow permission")
+public void user_login_with_gig_workflow_permission(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@Given("user select  giga workflow from top menu")
+public void user_select_giga_workflow_from_top_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select the option gig workflow  dropdown {string}")
+public void user_select_the_option_gig_workflow_dropdown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select activity information and fill the details for Structural")
+public void user_select_activity_information_and_fill_the_details_for_Structural(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("uncheck all FragnetStep Information nonreview steps and select first  nonreview step")
+public void uncheck_all_FragnetStep_Information_nonreview_steps_and_select_first_nonreview_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select Customize Fragnet and fill the details")
+public void user_select_Customize_Fragnet_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user select FragnetStep Information and fill the details")
+public void user_select_FragnetStep_Information_and_fill_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("User selects Stepfour gigents checkbox and it validates all the selected values in Stepfive {string},{string}")
+public void user_selects_Stepfour_gigents_checkbox_and_it_validates_all_the_selected_values_in_Stepfive(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

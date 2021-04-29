@@ -1,4 +1,4 @@
--Feature: Allocate all Manhour budgets to all the project activities
+Feature: Allocate all Manhour budgets to all the project activities
 
   #42614 - Apply Manhours: Allocate Manhour Budget to Project Activities
 

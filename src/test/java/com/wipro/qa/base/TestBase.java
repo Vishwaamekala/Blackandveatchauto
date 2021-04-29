@@ -49,7 +49,7 @@ public class TestBase {
 		
 		if(browserName.equals("chrome")){
 			String projectPath = System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/drivers/chromedriver88.exe");
+			System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/drivers/chromedriver90.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--incognito");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
